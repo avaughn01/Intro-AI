@@ -47,11 +47,12 @@ public class ModelLoadDrop{
         int batchSize = 100;
         String location = "dropOut_RELU_model5.zip";
         int outputNum = 43;     //possible labels
-
+        String trainLoc = "";
+        String testLoc = "";
 
         // file paths
-        File trainData = new File ("C:\\Users\\Gamecube\\Desktop\\AIproject\\DataSet\\Training");
-        File testData = new File ("C:\\Users\\Gamecube\\Desktop\\AIproject\\DataSet\\Training");
+        File trainData = new File (trainLoc);
+        File testData = new File (testLoc);
 
 
         FileSplit train = new FileSplit(trainData, NativeImageLoader.ALLOWED_FORMATS, randNumGen);
