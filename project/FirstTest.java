@@ -50,8 +50,8 @@ public class FirstTest {
         String trainLoc = "";
         String testLoc = "";
         // file paths
-        File trainData = new File ("trainLoc");
-        File testData = new File ("testLoc");
+        File trainData = new File (trainLoc);
+        File testData = new File (testLoc);
 
 
         FileSplit train = new FileSplit(trainData, NativeImageLoader.ALLOWED_FORMATS, randNumGen);
