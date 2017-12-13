@@ -47,10 +47,11 @@ public class FirstTest {
         int hiddenLayers = 100;
         int outputNum = 43;     //possible labels
         int numEpochs = 1000;
-
+        String trainLoc = "";
+        String testLoc = "";
         // file paths
-        File trainData = new File ("C:\\Users\\Gamecube\\Desktop\\AIproject\\DataSet\\Training");
-        File testData = new File ("C:\\Users\\Gamecube\\Desktop\\AIproject\\DataSet\\Testing");
+        File trainData = new File ("trainLoc");
+        File testData = new File ("testLoc");
 
 
         FileSplit train = new FileSplit(trainData, NativeImageLoader.ALLOWED_FORMATS, randNumGen);
