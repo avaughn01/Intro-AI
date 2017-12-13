@@ -1,4 +1,4 @@
-This Multi Layer Neural Network was made use Deep Learning 4 Java.  In order to test the model dl4j must be available on an IDE
+This Multi Layer Neural Network was made using Deep Learning 4 Java.  In order to test the model dl4j must be available on an IDE
 I used IntelliJ to access its library.  The test wild images must also use an IDE becuase it loads a window in swing.
 In the 5 ModelLoad java classes the trainLoc and testLoc strings are the locations of the training and testing datasets respectively.  By default these are empty.
 The modelLoc is the location of the .zip folder of where the MLNN is saved, by default this is in the same folder as the ModelLoad java files.
