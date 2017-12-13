@@ -1,3 +1,16 @@
+This Multi Layer Neural Network was made use Deep Learning 4 Java.  In order to test the model dl4j must be available on an IDE
+I used IntelliJ to access its library.  The test wild images must also use an IDE becuase it loads a window in swing.
+In the 5 ModelLoad java classes the trainLoc and testLoc strings are the locations of the training and testing datasets respectively.  By default these are empty.
+The modelLoc is the location of the .zip folder of where the MLNN is saved, by default this is in the same folder as the ModelLoad java files.
+I included only 1 result of testing against wild images, because the output was so long, however multiple images may be tested at the users discretion.  I will upload the wild stop sign image dataset I made and converted to: 
+github.com/avaughn01/Intro-AI/project/WildImages
+
+The firsttest.zip, modelFirstAdjust.zip, RRELU_norm_model4.zip, dropOut_RELU_model5.zip, and modelFinal.zip are the MLNN's to be loaded with the respective Java files: ModelLoadFirstTest.java, ModelLoadFirstAdjust.java, ModelLoadRRELU.java, ModelLoadDrop.java, ModelLoadFinal.java
+
+The results from the drop out neural network were very poor, and I am not sure why, also the training for final was extremely well, but had a robust amount of overfitting for the training data.  
+
+Overall my approach to this project was wrong.  I spent the semester creating models for networks based off of changing the dataset in an attempt to get a nice normalized dataset to input into the neural network.  I was able to accomplish a normalized dataset, but it resulted in overfitting, and extremely poor real world test results.  In the future it will be a far superior approach to adjust the configuration of the neural network itself and learn how the feautures of the neural network work, as opposed to trying to adjust the dataset itself.
+
 Index:  0-66 Explanation of data set used, and citation
 	67-126 Results of NeraulNetworks for training and testing data
 	127-171 Sample testing Final Neural Network against a wild image of a stop sign
