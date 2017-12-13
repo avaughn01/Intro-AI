@@ -45,13 +45,14 @@ public class ModelLoadRRELU {
         int rngseed =123;
         Random randNumGen = new Random(rngseed);
         int batchSize = 100;
-        String location = "RRELU_norm_model4.zip";
+        String modelLocation = "RRELU_norm_model4.zip";
         int outputNum = 43;     //possible labels
-
+        String trainLoc = "";
+        String testLoc = "";
 
         // file paths
-        File trainData = new File ("C:\\Users\\Gamecube\\Desktop\\AIproject\\DataSet\\Training");
-        File testData = new File ("C:\\Users\\Gamecube\\Desktop\\AIproject\\DataSet\\Testing");
+        File trainData = new File (trainLoc);
+        File testData = new File (testLoc);
 
 
         FileSplit train = new FileSplit(trainData, NativeImageLoader.ALLOWED_FORMATS, randNumGen);
@@ -77,7 +78,7 @@ public class ModelLoadRRELU {
 
         log.info("******LOAD TRAINED MODEL*******");
 
-        File locationToLoad = new File(location);
+        File locationToLoad = new File(modelLocation);
 
         //use the model built
         MultiLayerNetwork model = ModelSerializer.restoreMultiLayerNetwork(locationToLoad);
