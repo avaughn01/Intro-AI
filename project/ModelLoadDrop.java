@@ -45,7 +45,7 @@ public class ModelLoadDrop{
         int rngseed =123;
         Random randNumGen = new Random(rngseed);
         int batchSize = 100;
-        String location = "dropOut_RELU_model5.zip";
+        String modelLocation = "dropOut_RELU_model5.zip";
         int outputNum = 43;     //possible labels
         String trainLoc = "";
         String testLoc = "";
@@ -83,7 +83,7 @@ public class ModelLoadDrop{
         */
         log.info("******LOAD TRAINED MODEL*******");
 
-        File locationToLoad = new File(location);
+        File locationToLoad = new File(modelLocation);
 
         //use the model built
         MultiLayerNetwork model = ModelSerializer.restoreMultiLayerNetwork(locationToLoad);
